@@ -38,7 +38,7 @@ class Rankbot:
 
         self.sess = None
 
-        self.MODEL_DIR_BASE = 'save/model'
+        self.MODEL_DIR_BASE = 'save\model'
         self.MODEL_NAME_BASE = 'model'
         self.BEST_MODEL_NAME_BASE = 'best_model'
         self.MODEL_EXT = '.ckpt'
@@ -157,10 +157,11 @@ class Rankbot:
 
                 # Running session
                 # allow_soft_placement = True: 当设置为使用GPU而实际上没有GPU的时候，允许使用其他设备运行。
-                self.sess = tf.Session(config=tf.ConfigProto(
+                config = tf.ConfigProto(
                     allow_soft_placement=True,
                     log_device_placement=False)
-                )
+                config.gpu_options.per_process_gpu_memory_fraction = 0.7
+                self.sess = tf.Session(config=config)
                 print('Initialize variables...')
                 self.sess.run(tf.global_variables_initializer())
 

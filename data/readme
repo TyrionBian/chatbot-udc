@@ -1,15 +1,5 @@
-下载数据文件以后，在lecture3下面建立一个data文件夹，data文件夹的三个子文件夹和文件结构是
-
-samples  ubuntu  xiaohuangji
-
-./samples:
-
-./ubuntu:
-dialogs  README.md
+下载数据文件以后:
 
 ./ubuntu/dialogs:
 ubuntu3_7.pkl
-
-./xiaohuangji:
-xhj.pkl  xiaohuangji50w_fenciA.conv
 

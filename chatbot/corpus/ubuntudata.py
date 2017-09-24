@@ -109,7 +109,7 @@ class UbuntuData:
         return self.conversations
 
 if __name__ == "__main__":
-    dirName = '/home/dongguo/Dropbox/Projects/NLP/DeepQA/data/ubuntu/'
+    dirName = 'D:\\py_project\\chatbot-udc\\data\\ubuntu\\'
     data = UbuntuData(dirName)
     conversations = data.getConversations()
     import pickle

@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\py_project\\chatbot-udc\\save\\model-udc_2l_lr002_dr09_hid256_emb256_len50_vocab10000\\model.ckpt"
+all_model_checkpoint_paths: "D:\\py_project\\chatbot-udc\\save\\model-udc_2l_lr002_dr09_hid256_emb256_len50_vocab10000\\model.ckpt"
